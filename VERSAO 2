@@ -1,0 +1,17 @@
+# Duração de um ano em cada planeta (em dias terrestres)
+anos_planetas = {'mercúrio': 88, 'venus': 225, 'terra': 365.25, 'marte': 687, 
+                 'jupiter': 4333, 'saturno': 10759, 'urano': 30687, 'netuno': 60190}
+mercúrio = 88
+
+# Solicitação de dados
+idade_terra = int(input("Qual a sua idade na Terra? "))
+nome_do_planeta = input("Digite o nome do planeta: ").lower() #O método .lower() converte o nome inserido pelo usuário para letras minúsculas, Ou seja, 
+#"Mercúrio" e "mercúrio" serão tratados da mesma forma.
+
+# Verificação e cálculo
+if nome_do_planeta in anos_planetas:
+    idade_planeta = idade_terra * 365.25 / anos_planetas[nome_do_planeta]
+    #O método .capitalize() transforma a primeira letra da string em maiúscula e as demais em minúscula.
+    print(f"Sua idade em {nome_do_planeta.capitalize()} é aproximadamente {idade_planeta:} anos.") 
+else:
+    print("Planeta não reconhecido. Por favor, tente novamente com um nome válido.")
