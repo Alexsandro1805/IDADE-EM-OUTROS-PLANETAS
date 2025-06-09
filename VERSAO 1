@@ -1,0 +1,13 @@
+#mercurio = 0.24
+#venus = 0.62
+#terra = 1
+#marte = 1.88
+#jupiter = 11.86
+#saturno = 29.
+#urano = 30687
+#netuno = 60190
+idade_terra = int(input("entre com a sua idade: "))
+ano_da_terra = 1
+ano_do_planeta = 
+idade_planeta = idade_terra * ano_da_terra / ano_do_planeta
+print(idade_planeta)
